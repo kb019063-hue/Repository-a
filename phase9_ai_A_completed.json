@@ -1,0 +1,2059 @@
+{
+  "format": "v32-option2-phase9-human-review-v1",
+  "packet_sha256": "8461785ed70e3359aff144e416c8e5f3bfe9a730eeb8dee59731396aadbf3282",
+  "slot": "A",
+  "reviewer_id": "ai-A",
+  "cases": [
+    {
+      "case_id": "P9-a278d43e0f4a",
+      "requested_claims": [
+        {
+          "claim_text": "A bicameral legislature removes review of bills.",
+          "subject": "A bicameral legislature",
+          "predicate": "removes review of",
+          "object_or_scope": "bills",
+          "polarity": "affirmed",
+          "direction": "A bicameral legislature → review of bills is removed.",
+          "supporting_citation_indices": [
+            2
+          ],
+          "entailed_from_quotes": "no",
+          "rationale": "Quote [2] says bills are initiated in the lower house; it does not say review is removed."
+        },
+        {
+          "claim_text": "A bicameral legislature forces the lower chamber to pass laws without scrutiny.",
+          "subject": "A bicameral legislature",
+          "predicate": "forces",
+          "object_or_scope": "the lower chamber to pass laws without scrutiny",
+          "polarity": "affirmed",
+          "direction": "A bicameral legislature → the lower chamber is forced to pass laws without scrutiny.",
+          "supporting_citation_indices": [
+            3
+          ],
+          "entailed_from_quotes": "no",
+          "rationale": "Quote [3] says an elected lower house may pass hasty, ill-conceived laws, but does not establish compulsion or absence of scrutiny."
+        }
+      ],
+      "decomposition_ambiguous": false,
+      "decomposition_rationale": "The question contains two distinct requested propositions.",
+      "step_judgments": [
+        {
+          "step_index": 1,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 2,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 3,
+          "quote_exactness": "yes",
+          "citation_support": "no",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": "The quote says the lower house may be moved by election promises; the candidate removes that modality and states the influence categorically."
+        }
+      ],
+      "link_judgments": [
+        {
+          "link": "1->2",
+          "connective_licensed": "no",
+          "direction_supported": "no",
+          "rationale": "“Whereas” asserts a contrast, but the two-house definition and the lower-house bill-initiation fact are not contrasted or linked in that way."
+        },
+        {
+          "link": "2->3",
+          "connective_licensed": "yes",
+          "direction_supported": "yes",
+          "rationale": "“Furthermore” adds another related fact about the lower house; no causal inference is asserted."
+        }
+      ],
+      "global_judgment": {
+        "question_answerable_from_quotes": "no",
+        "candidate_covers_all_goals": "no",
+        "candidate_chain_fully_entailed": "no",
+        "rationale": "The quotes support a two-house definition, lower-house bill initiation, and a possibility of hasty bills, but not removal of review or compulsion without scrutiny. The chain omits the alleged review removal, and its first connective is unsupported; step 3 also strengthens “may” to a categorical claim."
+      }
+    },
+    {
+      "case_id": "P9-5d97f7fc4a58",
+      "requested_claims": [
+        {
+          "claim_text": "A small country rejects unitary government.",
+          "subject": "A small country",
+          "predicate": "rejects",
+          "object_or_scope": "unitary government",
+          "polarity": "affirmed",
+          "direction": "A small country → rejection of unitary government.",
+          "supporting_citation_indices": [
+            1
+          ],
+          "entailed_from_quotes": "no",
+          "rationale": "Quote [1] says some countries adopt unitary government to promote national unity; it does not say a small country rejects it."
+        },
+        {
+          "claim_text": "Duplicating national offices in every region conserves resources.",
+          "subject": "Duplicating national offices in every region",
+          "predicate": "conserves",
+          "object_or_scope": "resources",
+          "polarity": "affirmed",
+          "direction": "Duplication of national offices → resource conservation.",
+          "supporting_citation_indices": [
+            2,
+            3
+          ],
+          "entailed_from_quotes": "no",
+          "rationale": "Quotes [2] and [3] say resources are conserved because institutions are not duplicated, the reverse of the claim."
+        }
+      ],
+      "decomposition_ambiguous": false,
+      "decomposition_rationale": "The question contains two distinct requested propositions.",
+      "step_judgments": [
+        {
+          "step_index": 1,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 2,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 3,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        }
+      ],
+      "link_judgments": [
+        {
+          "link": "1->2",
+          "connective_licensed": "no",
+          "direction_supported": "no",
+          "rationale": "The unity rationale in step 1 does not cause or explain the separate cost-saving feature in step 2; “because” is unsupported."
+        },
+        {
+          "link": "2->3",
+          "connective_licensed": "yes",
+          "direction_supported": "yes",
+          "rationale": "Step 3 additively restates and elaborates the same resource-saving point already present in step 2."
+        }
+      ],
+      "global_judgment": {
+        "question_answerable_from_quotes": "no",
+        "candidate_covers_all_goals": "yes",
+        "candidate_chain_fully_entailed": "no",
+        "rationale": "The quotes support adoption for unity and resource savings from nonduplication, not rejection of unitary government or savings from duplication. The chain addresses both topics, but its first “because” link is unsupported; the final point is only an additive restatement."
+      }
+    },
+    {
+      "case_id": "P9-5c9c938a65a1",
+      "requested_claims": [
+        {
+          "claim_text": "Proportional representation distributes seats in proportion to votes cast.",
+          "subject": "Proportional representation",
+          "predicate": "distributes",
+          "object_or_scope": "seats to parties in proportion to votes cast",
+          "polarity": "affirmed",
+          "direction": "Votes cast → proportional allocation of seats to parties.",
+          "supporting_citation_indices": [
+            2,
+            3
+          ],
+          "entailed_from_quotes": "yes",
+          "rationale": ""
+        },
+        {
+          "claim_text": "Proportional representation protects smaller parties’ representation.",
+          "subject": "Proportional representation",
+          "predicate": "protects",
+          "object_or_scope": "smaller parties’ representation",
+          "polarity": "affirmed",
+          "direction": "Proportional representation → representation for smaller parties.",
+          "supporting_citation_indices": [
+            2,
+            3
+          ],
+          "entailed_from_quotes": "no",
+          "rationale": "The quotes establish proportional seat allocation and a vote-seat relationship, but do not state that smaller parties are protected."
+        }
+      ],
+      "decomposition_ambiguous": false,
+      "decomposition_rationale": "The question contains two distinct requested propositions.",
+      "step_judgments": [
+        {
+          "step_index": 1,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 2,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 3,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        }
+      ],
+      "link_judgments": [
+        {
+          "link": "1->2",
+          "connective_licensed": "no",
+          "direction_supported": "no",
+          "rationale": "The incomplete definition in quote [1] does not entail the seat-allocation statement in quote [2]; “therefore” and that direction are unsupported."
+        },
+        {
+          "link": "2->3",
+          "connective_licensed": "yes",
+          "direction_supported": "yes",
+          "rationale": "Proportional distribution by votes and a meaningful vote-seat relationship are aligned; quote [3] elaborates the same result."
+        }
+      ],
+      "global_judgment": {
+        "question_answerable_from_quotes": "no",
+        "candidate_covers_all_goals": "yes",
+        "candidate_chain_fully_entailed": "no",
+        "rationale": "Quote [2] directly supports proportional seat allocation, but no quote says smaller parties are protected. The chain addresses proportional seats and the vote-seat relationship, yet its “therefore” link from the incomplete definition is not licensed."
+      }
+    },
+    {
+      "case_id": "P9-0eabe3b3bcc6",
+      "requested_claims": [
+        {
+          "claim_text": "Competition between the public and private sectors in a mixed economy limits consumer exploitation.",
+          "subject": "Competition between the public and private sectors in a mixed economy",
+          "predicate": "limits",
+          "object_or_scope": "consumer exploitation",
+          "polarity": "affirmed",
+          "direction": "Healthy competition between the sectors → less exploitation of consumers.",
+          "supporting_citation_indices": [
+            2
+          ],
+          "entailed_from_quotes": "yes",
+          "rationale": ""
+        },
+        {
+          "claim_text": "A mixed economy promotes efficient production.",
+          "subject": "A mixed economy",
+          "predicate": "promotes",
+          "object_or_scope": "efficient production",
+          "polarity": "affirmed",
+          "direction": "A mixed economy → efficient production.",
+          "supporting_citation_indices": [
+            3
+          ],
+          "entailed_from_quotes": "unclear",
+          "rationale": "Quote [3] supports efficient allocation or use of resources, but does not explicitly establish efficient production."
+        }
+      ],
+      "decomposition_ambiguous": false,
+      "decomposition_rationale": "The question contains two distinct requested propositions.",
+      "step_judgments": [
+        {
+          "step_index": 1,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 2,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 3,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        }
+      ],
+      "link_judgments": [
+        {
+          "link": "1->2",
+          "connective_licensed": "no",
+          "direction_supported": "no",
+          "rationale": "The definition of mixed ownership in quote [1] does not itself establish the healthy competition and consumer-protection claim in quote [2]."
+        },
+        {
+          "link": "2->3",
+          "connective_licensed": "no",
+          "direction_supported": "no",
+          "rationale": "Quote [3] states efficient resource use, but the consumer-protection point in quote [2] is not shown to cause it."
+        }
+      ],
+      "global_judgment": {
+        "question_answerable_from_quotes": "unclear",
+        "candidate_covers_all_goals": "yes",
+        "candidate_chain_fully_entailed": "no",
+        "rationale": "Consumer protection is explicitly supported; efficient resource allocation is quoted, but efficient production is not explicit. The chain addresses both topics, but neither connective between its steps is licensed by the cited evidence."
+      }
+    },
+    {
+      "case_id": "P9-062189292e67",
+      "requested_claims": [
+        {
+          "claim_text": "Citizenship by descent requires birth inside Ghana.",
+          "subject": "Citizenship by descent",
+          "predicate": "requires",
+          "object_or_scope": "birth inside Ghana",
+          "polarity": "affirmed",
+          "direction": "Citizenship by descent → birth in Ghana as a requirement.",
+          "supporting_citation_indices": [
+            2
+          ],
+          "entailed_from_quotes": "no",
+          "rationale": "Quote [2] says a person not born in Ghana but with Ghanaian ancestry can claim citizenship through descent."
+        },
+        {
+          "claim_text": "Adoption prevents children from becoming citizens in Ghana.",
+          "subject": "Adoption",
+          "predicate": "prevents",
+          "object_or_scope": "children from becoming Ghanaian citizens",
+          "polarity": "affirmed",
+          "direction": "Adoption → prevention of a child’s Ghanaian citizenship.",
+          "supporting_citation_indices": [],
+          "entailed_from_quotes": "no",
+          "rationale": "None of the numbered quotes mentions adoption or its effect on children’s citizenship."
+        }
+      ],
+      "decomposition_ambiguous": false,
+      "decomposition_rationale": "The question contains two distinct requested propositions.",
+      "step_judgments": [
+        {
+          "step_index": 1,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 2,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 3,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        }
+      ],
+      "link_judgments": [
+        {
+          "link": "1->2",
+          "connective_licensed": "yes",
+          "direction_supported": "yes",
+          "rationale": "Birth and descent are presented as distinct routes to citizenship; “and” conjoins related facts without asserting causation."
+        },
+        {
+          "link": "2->3",
+          "connective_licensed": "yes",
+          "direction_supported": "yes",
+          "rationale": "The general descent statement is an additional, aligned fact following the specific ancestry example."
+        }
+      ],
+      "global_judgment": {
+        "question_answerable_from_quotes": "no",
+        "candidate_covers_all_goals": "no",
+        "candidate_chain_fully_entailed": "no",
+        "rationale": "The descent quotes contradict the claim that birth in Ghana is required, and adoption is not mentioned. The chain covers descent but omits adoption, so it does not address all requested goals."
+      }
+    },
+    {
+      "case_id": "P9-f8ec27d305fd",
+      "requested_claims": [
+        {
+          "claim_text": "ECOWAS limits cross-border movement by imposing visas.",
+          "subject": "ECOWAS",
+          "predicate": "limits",
+          "object_or_scope": "cross-border movement by imposing visa requirements",
+          "polarity": "affirmed",
+          "direction": "ECOWAS/visa requirements → reduced cross-border movement.",
+          "supporting_citation_indices": [
+            1,
+            2
+          ],
+          "entailed_from_quotes": "no",
+          "rationale": "Quotes [1] and [2] describe removed barriers and free movement; neither says ECOWAS uses visas to restrict movement."
+        },
+        {
+          "claim_text": "ECOWAS reduces regional trade.",
+          "subject": "ECOWAS",
+          "predicate": "reduces",
+          "object_or_scope": "regional trade",
+          "polarity": "affirmed",
+          "direction": "ECOWAS → reduced regional trade.",
+          "supporting_citation_indices": [
+            1
+          ],
+          "entailed_from_quotes": "no",
+          "rationale": "Quote [1] says ECOWAS facilitates regional trade, not reduces it."
+        }
+      ],
+      "decomposition_ambiguous": false,
+      "decomposition_rationale": "The question contains two distinct requested propositions.",
+      "step_judgments": [
+        {
+          "step_index": 1,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 2,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 3,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        }
+      ],
+      "link_judgments": [
+        {
+          "link": "1->2",
+          "connective_licensed": "yes",
+          "direction_supported": "yes",
+          "rationale": "Steps 1 and 2 add related facts about ECOWAS free movement; “and” is additive."
+        },
+        {
+          "link": "2->3",
+          "connective_licensed": "no",
+          "direction_supported": "no",
+          "rationale": "Free movement does not entail foreign interference; quote [3] gives no causal connection from step 2 to step 3."
+        }
+      ],
+      "global_judgment": {
+        "question_answerable_from_quotes": "no",
+        "candidate_covers_all_goals": "no",
+        "candidate_chain_fully_entailed": "no",
+        "rationale": "The quotes affirm free movement and trade facilitation, not visa restrictions or reduced trade. The candidate omits the visa mechanism, reverses the movement/trade direction, and then shifts to unrelated foreign interference."
+      }
+    },
+    {
+      "case_id": "P9-b0956d989c38",
+      "requested_claims": [
+        {
+          "claim_text": "A small country might choose a unitary system because it avoids wasting human and material resources.",
+          "subject": "A small country",
+          "predicate": "might choose",
+          "object_or_scope": "a unitary system to avoid wasting human and material resources",
+          "polarity": "affirmed",
+          "direction": "The resource-saving feature of a unitary system → a country’s choice of that system.",
+          "supporting_citation_indices": [
+            1,
+            2,
+            3
+          ],
+          "entailed_from_quotes": "yes",
+          "rationale": ""
+        },
+        {
+          "claim_text": "A unitary system conserves resources by avoiding duplication of institutions at the local level.",
+          "subject": "A unitary system",
+          "predicate": "conserves",
+          "object_or_scope": "resources by avoiding duplicated local institutions",
+          "polarity": "affirmed",
+          "direction": "Nonduplication of institutions → resource conservation.",
+          "supporting_citation_indices": [
+            2,
+            3
+          ],
+          "entailed_from_quotes": "yes",
+          "rationale": ""
+        }
+      ],
+      "decomposition_ambiguous": false,
+      "decomposition_rationale": "The question contains two distinct requested propositions.",
+      "step_judgments": [
+        {
+          "step_index": 1,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 2,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 3,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        }
+      ],
+      "link_judgments": [
+        {
+          "link": "1->2",
+          "connective_licensed": "yes",
+          "direction_supported": "yes",
+          "rationale": "Avoiding waste and conserving resources are directly aligned; quote [1] gives the resource-saving reason that step 2 summarizes."
+        },
+        {
+          "link": "2->3",
+          "connective_licensed": "no",
+          "direction_supported": "no",
+          "rationale": "Step 3 gives the cause of conservation, not a contrast to it; “whereas” is unlicensed and the explanation runs from nonduplication to savings."
+        }
+      ],
+      "global_judgment": {
+        "question_answerable_from_quotes": "yes",
+        "candidate_covers_all_goals": "yes",
+        "candidate_chain_fully_entailed": "no",
+        "rationale": "The quotes state that a unitary system avoids waste and that avoiding duplicated institutions conserves resources, covering both goals. The chain covers them, but its final “whereas” miscasts an explanatory relation as a contrast."
+      }
+    },
+    {
+      "case_id": "P9-cd170990c2b6",
+      "requested_claims": [
+        {
+          "claim_text": "The Commonwealth ensures member compliance with its resolutions.",
+          "subject": "The Commonwealth",
+          "predicate": "ensures",
+          "object_or_scope": "member compliance with resolutions",
+          "polarity": "affirmed",
+          "direction": "Commonwealth enforcement → members’ compliance with resolutions.",
+          "supporting_citation_indices": [
+            3
+          ],
+          "entailed_from_quotes": "no",
+          "rationale": "The quotes concern hosting, Ghana’s dues, and programme/policy delivery; none says the Commonwealth enforces compliance with resolutions."
+        },
+        {
+          "claim_text": "Timely member dues maintain full programme funding.",
+          "subject": "Timely member dues",
+          "predicate": "maintain",
+          "object_or_scope": "full programme funding",
+          "polarity": "affirmed",
+          "direction": "Timely payment of dues → fully funded programmes.",
+          "supporting_citation_indices": [
+            2,
+            3
+          ],
+          "entailed_from_quotes": "no",
+          "rationale": "Quotes [2] and [3] say Ghana pays dues regularly and dues enable programmes; they do not establish full funding or that timely payment maintains it."
+        }
+      ],
+      "decomposition_ambiguous": false,
+      "decomposition_rationale": "The question contains two distinct requested propositions.",
+      "step_judgments": [
+        {
+          "step_index": 1,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 2,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 3,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        }
+      ],
+      "link_judgments": [
+        {
+          "link": "1->2",
+          "connective_licensed": "no",
+          "direction_supported": "no",
+          "rationale": "Hosting conferences and paying dues are separate contributions, not a contrast licensed by “whereas.”"
+        },
+        {
+          "link": "2->3",
+          "connective_licensed": "no",
+          "direction_supported": "yes",
+          "rationale": "Quote [3] supports dues enabling programme activity, so payment-to-programme direction is aligned; “However” signals contrast rather than that relation."
+        }
+      ],
+      "global_judgment": {
+        "question_answerable_from_quotes": "no",
+        "candidate_covers_all_goals": "no",
+        "candidate_chain_fully_entailed": "no",
+        "rationale": "The quotes do not establish resolutions compliance or full programme funding. The chain omits compliance and its “whereas” and “However” links misstate the relation between contributions and programme activity."
+      }
+    },
+    {
+      "case_id": "P9-2183ac7f73de",
+      "requested_claims": [
+        {
+          "claim_text": "Weak Commonwealth enforcement reduces members’ compliance.",
+          "subject": "Weak Commonwealth enforcement",
+          "predicate": "reduces",
+          "object_or_scope": "members’ compliance",
+          "polarity": "affirmed",
+          "direction": "Weak enforcement → lower member compliance.",
+          "supporting_citation_indices": [],
+          "entailed_from_quotes": "no",
+          "rationale": "The numbered quotes do not discuss enforcement or compliance."
+        },
+        {
+          "claim_text": "Members’ nonpayment of dues limits Commonwealth programme delivery.",
+          "subject": "Members’ nonpayment of dues",
+          "predicate": "limits",
+          "object_or_scope": "Commonwealth programme delivery",
+          "polarity": "affirmed",
+          "direction": "Nonpayment of dues → reduced programme delivery.",
+          "supporting_citation_indices": [
+            2,
+            3
+          ],
+          "entailed_from_quotes": "unclear",
+          "rationale": "Quote [3] says dues enable programmes, but the quotes do not state what happens when members do not pay."
+        }
+      ],
+      "decomposition_ambiguous": false,
+      "decomposition_rationale": "The question contains two distinct requested propositions.",
+      "step_judgments": [
+        {
+          "step_index": 1,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 2,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 3,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        }
+      ],
+      "link_judgments": [
+        {
+          "link": "1->2",
+          "connective_licensed": "no",
+          "direction_supported": "no",
+          "rationale": "Hosting conferences and regular dues are not shown as a contrast; “whereas” is unsupported."
+        },
+        {
+          "link": "2->3",
+          "connective_licensed": "no",
+          "direction_supported": "yes",
+          "rationale": "Quote [3] supports dues-payment-to-programme activity, but “However” implies contrast rather than that explanatory direction."
+        }
+      ],
+      "global_judgment": {
+        "question_answerable_from_quotes": "no",
+        "candidate_covers_all_goals": "no",
+        "candidate_chain_fully_entailed": "no",
+        "rationale": "No quote addresses weak enforcement or compliance, and the effect of nonpayment is not stated. The candidate only gives Ghana’s regular dues and the general enabling role of dues, omitting the requested enforcement and nonpayment claims."
+      }
+    },
+    {
+      "case_id": "P9-ae2d5218b7bd",
+      "requested_claims": [
+        {
+          "claim_text": "A legislature sets legal limits on local authorities.",
+          "subject": "A legislature",
+          "predicate": "sets",
+          "object_or_scope": "legal limits on local authorities",
+          "polarity": "affirmed",
+          "direction": "Legislature → legal constraints on local authorities.",
+          "supporting_citation_indices": [],
+          "entailed_from_quotes": "no",
+          "rationale": "The numbered quotes concern financial auditing, public criticism, and demonstrations; they do not describe legislative limits."
+        },
+        {
+          "claim_text": "The public can challenge local authorities’ poor performance.",
+          "subject": "The public",
+          "predicate": "can challenge",
+          "object_or_scope": "local authorities’ poor performance",
+          "polarity": "affirmed",
+          "direction": "The public → criticism or other challenge of local authorities’ performance.",
+          "supporting_citation_indices": [
+            2,
+            3
+          ],
+          "entailed_from_quotes": "yes",
+          "rationale": ""
+        }
+      ],
+      "decomposition_ambiguous": false,
+      "decomposition_rationale": "The question contains two distinct requested propositions.",
+      "step_judgments": [
+        {
+          "step_index": 1,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 2,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 3,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        }
+      ],
+      "link_judgments": [
+        {
+          "link": "1->2",
+          "connective_licensed": "no",
+          "direction_supported": "no",
+          "rationale": "Financial audits and public criticism are distinct controls, not a contrast established by the quotes."
+        },
+        {
+          "link": "2->3",
+          "connective_licensed": "no",
+          "direction_supported": "no",
+          "rationale": "Quote [3] says demonstrations sometimes express public disgust; it does not say criticism in step 2 causes demonstrations."
+        }
+      ],
+      "global_judgment": {
+        "question_answerable_from_quotes": "no",
+        "candidate_covers_all_goals": "no",
+        "candidate_chain_fully_entailed": "no",
+        "rationale": "The public’s criticism of poor performance is supported, but no quote establishes legislative limits. The candidate covers public control but not the requested legislative role, and its links are not supported."
+      }
+    },
+    {
+      "case_id": "P9-e0f6f15dd23b",
+      "requested_claims": [
+        {
+          "claim_text": "Unappealing candidates or party manifestoes discourage voters from turning out.",
+          "subject": "Unappealing candidates or party manifestoes",
+          "predicate": "discourage",
+          "object_or_scope": "voter turnout",
+          "polarity": "affirmed",
+          "direction": "Unappealing choices → voter abstention or lower turnout.",
+          "supporting_citation_indices": [
+            2
+          ],
+          "entailed_from_quotes": "yes",
+          "rationale": ""
+        },
+        {
+          "claim_text": "Voters who have lost confidence in leaders abstain from voting.",
+          "subject": "Voters who have lost confidence in leaders",
+          "predicate": "abstain from",
+          "object_or_scope": "voting",
+          "polarity": "affirmed",
+          "direction": "Loss of confidence in leaders → abstention from voting.",
+          "supporting_citation_indices": [
+            1,
+            2
+          ],
+          "entailed_from_quotes": "yes",
+          "rationale": ""
+        }
+      ],
+      "decomposition_ambiguous": false,
+      "decomposition_rationale": "The question contains two distinct requested propositions.",
+      "step_judgments": [
+        {
+          "step_index": 1,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 2,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 3,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        }
+      ],
+      "link_judgments": [
+        {
+          "link": "1->2",
+          "connective_licensed": "no",
+          "direction_supported": "no",
+          "rationale": "Loss of confidence and unappealing candidates are separate reasons for abstention; quote evidence does not make the first cause the second."
+        },
+        {
+          "link": "2->3",
+          "connective_licensed": "no",
+          "direction_supported": "no",
+          "rationale": "Unappealing candidates and legal disqualification are distinct reasons for nonvoting, not a contrast or inference licensed by “whereas.”"
+        }
+      ],
+      "global_judgment": {
+        "question_answerable_from_quotes": "yes",
+        "candidate_covers_all_goals": "yes",
+        "candidate_chain_fully_entailed": "no",
+        "rationale": "The quotes explicitly identify unappealing candidates/manifestoes and lost confidence in leaders as reasons some people abstain. The candidate covers both goals, but turns separate reasons into unsupported links and adds an unrelated third cause."
+      }
+    },
+    {
+      "case_id": "P9-8325d5b57d6b",
+      "requested_claims": [
+        {
+          "claim_text": "ECOWAS facilitates cross-border movement of people.",
+          "subject": "ECOWAS",
+          "predicate": "facilitates",
+          "object_or_scope": "cross-border movement of people",
+          "polarity": "affirmed",
+          "direction": "ECOWAS → easier cross-border movement of people.",
+          "supporting_citation_indices": [
+            1,
+            2
+          ],
+          "entailed_from_quotes": "yes",
+          "rationale": ""
+        },
+        {
+          "claim_text": "ECOWAS encourages regional trade.",
+          "subject": "ECOWAS",
+          "predicate": "facilitates",
+          "object_or_scope": "regional trade",
+          "polarity": "affirmed",
+          "direction": "ECOWAS → increased or facilitated regional trade.",
+          "supporting_citation_indices": [
+            1
+          ],
+          "entailed_from_quotes": "yes",
+          "rationale": ""
+        }
+      ],
+      "decomposition_ambiguous": false,
+      "decomposition_rationale": "The question contains two distinct requested propositions.",
+      "step_judgments": [
+        {
+          "step_index": 1,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 2,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 3,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        }
+      ],
+      "link_judgments": [
+        {
+          "link": "1->2",
+          "connective_licensed": "yes",
+          "direction_supported": "yes",
+          "rationale": "Steps 1 and 2 add related claims about free movement; the conjunction is supported as an additive link."
+        },
+        {
+          "link": "2->3",
+          "connective_licensed": "no",
+          "direction_supported": "no",
+          "rationale": "Free movement and regional trade do not entail foreign interference; quote [3] supplies no such causal link."
+        }
+      ],
+      "global_judgment": {
+        "question_answerable_from_quotes": "yes",
+        "candidate_covers_all_goals": "yes",
+        "candidate_chain_fully_entailed": "no",
+        "rationale": "Quotes [1] and [2] support free movement, and quote [1] states that ECOWAS facilitates regional trade. The chain covers both goals in its first two steps, but its conclusion and “therefore” link to foreign interference are off-goal and unsupported."
+      }
+    },
+    {
+      "case_id": "P9-dedb76a1222d",
+      "requested_claims": [
+        {
+          "claim_text": "A multi-party system encourages coalition government.",
+          "subject": "A multi-party system",
+          "predicate": "encourages formation of",
+          "object_or_scope": "coalition government",
+          "polarity": "affirmed",
+          "direction": "A multi-party system → coalition formation.",
+          "supporting_citation_indices": [
+            1
+          ],
+          "entailed_from_quotes": "yes",
+          "rationale": ""
+        },
+        {
+          "claim_text": "Coalition government reduces governmental stability.",
+          "subject": "Coalition government",
+          "predicate": "reduces",
+          "object_or_scope": "governmental stability",
+          "polarity": "affirmed",
+          "direction": "Coalition government → weaker or less stable government.",
+          "supporting_citation_indices": [
+            1
+          ],
+          "entailed_from_quotes": "yes",
+          "rationale": ""
+        }
+      ],
+      "decomposition_ambiguous": false,
+      "decomposition_rationale": "The question contains two distinct requested propositions.",
+      "step_judgments": [
+        {
+          "step_index": 1,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 2,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 3,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        }
+      ],
+      "link_judgments": [
+        {
+          "link": "1->2",
+          "connective_licensed": "no",
+          "direction_supported": "no",
+          "rationale": "Quote [1] attributes coalition formation to difficulty winning a majority; quote [2] describes divisiveness but does not make it the cause of coalitions."
+        },
+        {
+          "link": "2->3",
+          "connective_licensed": "no",
+          "direction_supported": "no",
+          "rationale": "Quote [2] describes divisiveness, while quote [3] attributes development delays to coalition arguments; the stated “therefore” direction is not shown."
+        }
+      ],
+      "global_judgment": {
+        "question_answerable_from_quotes": "yes",
+        "candidate_covers_all_goals": "yes",
+        "candidate_chain_fully_entailed": "no",
+        "rationale": "Quote [1] explicitly says multiparty systems encourage coalitions that are often weak and unstable. The chain covers both requested goals, but the divisiveness and development facts do not license either proposed causal link."
+      }
+    },
+    {
+      "case_id": "P9-91fa62ad1433",
+      "requested_claims": [
+        {
+          "claim_text": "Local authorities make laws without legislative limits or approval.",
+          "subject": "Local authorities",
+          "predicate": "make laws without",
+          "object_or_scope": "legislative limits or approval",
+          "polarity": "affirmed",
+          "direction": "Local authorities → bylaws without legislative constraint.",
+          "supporting_citation_indices": [
+            2
+          ],
+          "entailed_from_quotes": "no",
+          "rationale": "Quote [2] says bylaws are subject to legislative approval and local authorities must operate within the legal framework, the opposite of the claim."
+        },
+        {
+          "claim_text": "Local authorities prevent the public from criticizing their poor performance.",
+          "subject": "Local authorities",
+          "predicate": "prevent",
+          "object_or_scope": "public criticism of their poor performance",
+          "polarity": "affirmed",
+          "direction": "Local authorities → suppression of public criticism.",
+          "supporting_citation_indices": [
+            1
+          ],
+          "entailed_from_quotes": "no",
+          "rationale": "Quote [1] says the general public can control local authorities by criticizing poor performance."
+        }
+      ],
+      "decomposition_ambiguous": false,
+      "decomposition_rationale": "The question contains two distinct requested propositions.",
+      "step_judgments": [
+        {
+          "step_index": 1,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 2,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 3,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        }
+      ],
+      "link_judgments": [
+        {
+          "link": "1->2",
+          "connective_licensed": "yes",
+          "direction_supported": "yes",
+          "rationale": "Public control and legislative control are additive forms of control described in the quoted material; no causal direction is asserted."
+        },
+        {
+          "link": "2->3",
+          "connective_licensed": "no",
+          "direction_supported": "no",
+          "rationale": "Legislative approval and executive control are distinct mechanisms, not a contrast established by “whereas.”"
+        }
+      ],
+      "global_judgment": {
+        "question_answerable_from_quotes": "no",
+        "candidate_covers_all_goals": "yes",
+        "candidate_chain_fully_entailed": "no",
+        "rationale": "The quotes state that bylaws need legislative approval and that the public can criticize poor performance, contradicting both requested premises. The chain addresses both subjects with the opposite facts, but its final “whereas” is not a supported contrast."
+      }
+    },
+    {
+      "case_id": "P9-565c16c759e3",
+      "requested_claims": [
+        {
+          "claim_text": "Judicial review promotes conflict between branches.",
+          "subject": "Judicial review",
+          "predicate": "promotes",
+          "object_or_scope": "conflict between branches",
+          "polarity": "affirmed",
+          "direction": "Judicial review → interbranch conflict.",
+          "supporting_citation_indices": [
+            1,
+            2
+          ],
+          "entailed_from_quotes": "no",
+          "rationale": "Quote [1] grants courts power to nullify unconstitutional acts, while quote [2] describes mediation; neither states that judicial review promotes interbranch conflict."
+        },
+        {
+          "claim_text": "Judicial review limits smooth state administration.",
+          "subject": "Judicial review",
+          "predicate": "limits",
+          "object_or_scope": "smooth state administration",
+          "polarity": "affirmed",
+          "direction": "Judicial review → reduced smoothness of state administration.",
+          "supporting_citation_indices": [
+            2,
+            3
+          ],
+          "entailed_from_quotes": "no",
+          "rationale": "Quotes [2] and [3] describe preserving the federal bond and a lasting federation, not limiting smooth administration."
+        }
+      ],
+      "decomposition_ambiguous": false,
+      "decomposition_rationale": "The question contains two distinct requested propositions.",
+      "step_judgments": [
+        {
+          "step_index": 1,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 2,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 3,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        }
+      ],
+      "link_judgments": [
+        {
+          "link": "1->2",
+          "connective_licensed": "yes",
+          "direction_supported": "yes",
+          "rationale": "The quotes add judicial review’s nullification role and its mediation role; “and” is additive rather than causal."
+        },
+        {
+          "link": "2->3",
+          "connective_licensed": "yes",
+          "direction_supported": "yes",
+          "rationale": "Quote [2] links mediation with preserving the federal bond, and quote [3] states the resulting benefits."
+        }
+      ],
+      "global_judgment": {
+        "question_answerable_from_quotes": "no",
+        "candidate_covers_all_goals": "no",
+        "candidate_chain_fully_entailed": "no",
+        "rationale": "The quotes describe nullification, federal mediation, and preserving the federal bond, not interbranch conflict or impaired smooth administration. The candidate does not cover the requested outcomes, despite supported individual steps and a supported final result link."
+      }
+    },
+    {
+      "case_id": "P9-9f9243fb751c",
+      "requested_claims": [
+        {
+          "claim_text": "Proportional representation ensures one party takes all legislative seats.",
+          "subject": "Proportional representation",
+          "predicate": "ensures",
+          "object_or_scope": "one party takes all legislative seats",
+          "polarity": "affirmed",
+          "direction": "Proportional representation → one-party winner-take-all seat outcome.",
+          "supporting_citation_indices": [
+            1
+          ],
+          "entailed_from_quotes": "no",
+          "rationale": "Quote [1] says seats are distributed among parties in proportion to votes, not that one party takes all seats."
+        },
+        {
+          "claim_text": "Proportional representation prevents smaller parties from winning any seats.",
+          "subject": "Proportional representation",
+          "predicate": "prevents",
+          "object_or_scope": "smaller parties from winning any seats",
+          "polarity": "affirmed",
+          "direction": "Proportional representation → no seats for smaller parties.",
+          "supporting_citation_indices": [
+            2
+          ],
+          "entailed_from_quotes": "no",
+          "rationale": "Quote [2] says each political party receives seats proportional to votes; it does not establish that smaller parties are excluded."
+        }
+      ],
+      "decomposition_ambiguous": false,
+      "decomposition_rationale": "The question contains two distinct requested propositions.",
+      "step_judgments": [
+        {
+          "step_index": 1,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 2,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 3,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        }
+      ],
+      "link_judgments": [
+        {
+          "link": "1->2",
+          "connective_licensed": "yes",
+          "direction_supported": "yes",
+          "rationale": "Quotes [1] and [2] add aligned descriptions of proportional seat allocation according to votes."
+        },
+        {
+          "link": "2->3",
+          "connective_licensed": "no",
+          "direction_supported": "no",
+          "rationale": "The incomplete definition in quote [3] does not explain or cause the proportional seat design in quote [2]."
+        }
+      ],
+      "global_judgment": {
+        "question_answerable_from_quotes": "no",
+        "candidate_covers_all_goals": "yes",
+        "candidate_chain_fully_entailed": "no",
+        "rationale": "The quotes describe proportional allocation to parties, not winner-take-all seats or exclusion of smaller parties. The chain addresses seat allocation and parties, but its “because” link from a fragmentary definition is unsupported."
+      }
+    },
+    {
+      "case_id": "P9-485e76f4efcd",
+      "requested_claims": [
+        {
+          "claim_text": "Citizenship by descent provides a path to Ghanaian citizenship.",
+          "subject": "Citizenship by descent",
+          "predicate": "provides",
+          "object_or_scope": "a path to Ghanaian citizenship",
+          "polarity": "affirmed",
+          "direction": "Ghanaian ancestry/descent → a claim to Ghanaian citizenship.",
+          "supporting_citation_indices": [
+            1,
+            2,
+            3
+          ],
+          "entailed_from_quotes": "yes",
+          "rationale": ""
+        },
+        {
+          "claim_text": "Adoption grants Ghanaian citizenship to a child.",
+          "subject": "Adoption",
+          "predicate": "grants",
+          "object_or_scope": "Ghanaian citizenship to a child",
+          "polarity": "affirmed",
+          "direction": "Adoption → a child’s Ghanaian citizenship.",
+          "supporting_citation_indices": [],
+          "entailed_from_quotes": "no",
+          "rationale": "None of the numbered quotes mentions adoption or citizenship through adoption."
+        }
+      ],
+      "decomposition_ambiguous": false,
+      "decomposition_rationale": "The question contains two distinct requested propositions.",
+      "step_judgments": [
+        {
+          "step_index": 1,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 2,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 3,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        }
+      ],
+      "link_judgments": [
+        {
+          "link": "1->2",
+          "connective_licensed": "yes",
+          "direction_supported": "yes",
+          "rationale": "The specific ancestry example is an additive illustration of the descent route stated in quote [1]."
+        },
+        {
+          "link": "2->3",
+          "connective_licensed": "no",
+          "direction_supported": "no",
+          "rationale": "A single example does not entail the general rule by “therefore”; quote [3] states the general rule independently."
+        }
+      ],
+      "global_judgment": {
+        "question_answerable_from_quotes": "no",
+        "candidate_covers_all_goals": "no",
+        "candidate_chain_fully_entailed": "no",
+        "rationale": "The quotes support citizenship through descent, but do not mention adoption. The chain covers the descent goal only; the specific example does not license its “therefore” generalization."
+      }
+    },
+    {
+      "case_id": "P9-4ee72618f82d",
+      "requested_claims": [
+        {
+          "claim_text": "Judicial review prevents conflict between branches.",
+          "subject": "Judicial review",
+          "predicate": "prevents",
+          "object_or_scope": "conflict between branches",
+          "polarity": "affirmed",
+          "direction": "Judicial review → less interbranch conflict.",
+          "supporting_citation_indices": [
+            1,
+            2
+          ],
+          "entailed_from_quotes": "no",
+          "rationale": "Quotes [1] and [2] describe judicial nullification and mediation between central and state governments, not prevention of conflict between branches."
+        },
+        {
+          "claim_text": "Judicial review protects elected officials from court oversight.",
+          "subject": "Judicial review",
+          "predicate": "protects",
+          "object_or_scope": "elected officials from court oversight",
+          "polarity": "affirmed",
+          "direction": "Judicial review → reduced court oversight of elected officials.",
+          "supporting_citation_indices": [
+            1
+          ],
+          "entailed_from_quotes": "no",
+          "rationale": "Quote [1] says the judiciary can nullify unconstitutional acts of the legislature and executive, which does not support protection from court oversight."
+        }
+      ],
+      "decomposition_ambiguous": false,
+      "decomposition_rationale": "The question contains two distinct requested propositions.",
+      "step_judgments": [
+        {
+          "step_index": 1,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 2,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 3,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        }
+      ],
+      "link_judgments": [
+        {
+          "link": "1->2",
+          "connective_licensed": "yes",
+          "direction_supported": "yes",
+          "rationale": "The quotes add a judicial-review definition and a mediation function; “and” is additive."
+        },
+        {
+          "link": "2->3",
+          "connective_licensed": "yes",
+          "direction_supported": "yes",
+          "rationale": "Quote [2] links mediation with preserving the federal bond, and quote [3] states the related benefits."
+        }
+      ],
+      "global_judgment": {
+        "question_answerable_from_quotes": "no",
+        "candidate_covers_all_goals": "no",
+        "candidate_chain_fully_entailed": "no",
+        "rationale": "The quotes support judicial review and federal mediation/bond, not preventing interbranch conflict or insulating elected officials from oversight. The candidate does not address the requested outcomes, even though its individual steps and final benefit link are supported."
+      }
+    },
+    {
+      "case_id": "P9-ccbcd6a7af3d",
+      "requested_claims": [
+        {
+          "claim_text": "Fascism protects opposition parties.",
+          "subject": "Fascism",
+          "predicate": "protects",
+          "object_or_scope": "opposition parties",
+          "polarity": "affirmed",
+          "direction": "A fascist state → protection of opposition parties.",
+          "supporting_citation_indices": [
+            2
+          ],
+          "entailed_from_quotes": "no",
+          "rationale": "Quote [2] describes opposition parties’ role, but none of the quotes connects that role to fascism."
+        },
+        {
+          "claim_text": "A fascist state decentralizes economic decisions to independent producers.",
+          "subject": "A fascist state",
+          "predicate": "decentralizes",
+          "object_or_scope": "economic decisions to independent producers",
+          "polarity": "affirmed",
+          "direction": "A fascist state → decision-making authority for independent producers.",
+          "supporting_citation_indices": [],
+          "entailed_from_quotes": "no",
+          "rationale": "None of the numbered quotes addresses fascism, economic organization, or independent producers."
+        }
+      ],
+      "decomposition_ambiguous": false,
+      "decomposition_rationale": "The question contains two distinct requested propositions.",
+      "step_judgments": [
+        {
+          "step_index": 1,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 2,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 3,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        }
+      ],
+      "link_judgments": [
+        {
+          "link": "1->2",
+          "connective_licensed": "yes",
+          "direction_supported": "yes",
+          "rationale": "The two quotes add related functions of political parties; “and” is additive."
+        },
+        {
+          "link": "2->3",
+          "connective_licensed": "yes",
+          "direction_supported": "yes",
+          "rationale": "The alternative-government role and recruitment role are separate, related party functions; “Furthermore” adds one to the other."
+        }
+      ],
+      "global_judgment": {
+        "question_answerable_from_quotes": "no",
+        "candidate_covers_all_goals": "no",
+        "candidate_chain_fully_entailed": "no",
+        "rationale": "No quote connects fascism to opposition protection or economic decentralization. The candidate consists of generic political-party functions and misses both requested goals."
+      }
+    },
+    {
+      "case_id": "P9-657509db0553",
+      "requested_claims": [
+        {
+          "claim_text": "A fascist state restricts opposition parties.",
+          "subject": "A fascist state",
+          "predicate": "restricts",
+          "object_or_scope": "opposition parties",
+          "polarity": "affirmed",
+          "direction": "A fascist state → limits on opposition parties.",
+          "supporting_citation_indices": [
+            1,
+            2,
+            3
+          ],
+          "entailed_from_quotes": "no",
+          "rationale": "The quotes define opposition parties and describe watchdog/alternative-government functions, but do not state that a fascist state restricts them."
+        },
+        {
+          "claim_text": "A fascist state controls its economy.",
+          "subject": "A fascist state",
+          "predicate": "controls",
+          "object_or_scope": "its economy",
+          "polarity": "affirmed",
+          "direction": "A fascist state → control of the national economy.",
+          "supporting_citation_indices": [],
+          "entailed_from_quotes": "no",
+          "rationale": "None of the numbered quotes concerns fascism or economic control."
+        }
+      ],
+      "decomposition_ambiguous": false,
+      "decomposition_rationale": "The question contains two distinct requested propositions.",
+      "step_judgments": [
+        {
+          "step_index": 1,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 2,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 3,
+          "quote_exactness": "yes",
+          "citation_support": "unclear",
+          "subject_match": "unclear",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "unclear",
+          "rationale": "Quote [3] is a relative-clause fragment (“which can take over”) without an explicit actor in the excerpt; the candidate’s subject and action direction cannot be verified from [3] alone."
+        }
+      ],
+      "link_judgments": [
+        {
+          "link": "1->2",
+          "connective_licensed": "no",
+          "direction_supported": "no",
+          "rationale": "Quote [1] defines opposition parties as those not in power; quote [2] does not say that being out of power causes the watchdog role."
+        },
+        {
+          "link": "2->3",
+          "connective_licensed": "unclear",
+          "direction_supported": "unclear",
+          "rationale": "Quote [3] lacks an explicit actor, so the additive relation and step direction from the watchdog claim cannot be confirmed from the numbered quote."
+        }
+      ],
+      "global_judgment": {
+        "question_answerable_from_quotes": "no",
+        "candidate_covers_all_goals": "no",
+        "candidate_chain_fully_entailed": "no",
+        "rationale": "The quotes describe opposition-party roles, not fascist restrictions or economic control. The candidate misses both goals, and its final step/link has an unresolved actor in the quoted fragment."
+      }
+    },
+    {
+      "case_id": "P9-cad73a53eea9",
+      "requested_claims": [
+        {
+          "claim_text": "A multi-party system prevents coalition governments.",
+          "subject": "A multi-party system",
+          "predicate": "prevents",
+          "object_or_scope": "coalition governments",
+          "polarity": "affirmed",
+          "direction": "A multi-party system → no coalition formation.",
+          "supporting_citation_indices": [
+            1
+          ],
+          "entailed_from_quotes": "no",
+          "rationale": "Quote [1] explicitly says a multi-party system encourages coalition government."
+        },
+        {
+          "claim_text": "A multi-party system ensures lasting political stability.",
+          "subject": "A multi-party system",
+          "predicate": "ensures",
+          "object_or_scope": "lasting political stability",
+          "polarity": "affirmed",
+          "direction": "A multi-party system → lasting political stability.",
+          "supporting_citation_indices": [
+            1,
+            3
+          ],
+          "entailed_from_quotes": "no",
+          "rationale": "Quotes [1] and [3] describe weak, unstable coalitions and possible disruption, not lasting stability."
+        }
+      ],
+      "decomposition_ambiguous": false,
+      "decomposition_rationale": "The question contains two distinct requested propositions.",
+      "step_judgments": [
+        {
+          "step_index": 1,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 2,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 3,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        }
+      ],
+      "link_judgments": [
+        {
+          "link": "1->2",
+          "connective_licensed": "no",
+          "direction_supported": "no",
+          "rationale": "Quote [1] links coalitions to difficulty winning a majority; quote [2] states divisiveness but does not say it causes the coalition pattern."
+        },
+        {
+          "link": "2->3",
+          "connective_licensed": "no",
+          "direction_supported": "no",
+          "rationale": "Quote [2] states fanaticism, while quote [3] describes coalition instability; neither supports a “because” link between them."
+        }
+      ],
+      "global_judgment": {
+        "question_answerable_from_quotes": "no",
+        "candidate_covers_all_goals": "yes",
+        "candidate_chain_fully_entailed": "no",
+        "rationale": "The quotes say multiparty systems encourage coalitions and describe coalitions as weak or unstable, opposite to the requested prevention/stability claims. The chain addresses the coalition and stability topics, but its causal links are unsupported."
+      }
+    },
+    {
+      "case_id": "P9-1463cf4fa9c8",
+      "requested_claims": [
+        {
+          "claim_text": "Attractive party manifestoes force voters to abstain.",
+          "subject": "Attractive party manifestoes",
+          "predicate": "force",
+          "object_or_scope": "voters to abstain",
+          "polarity": "affirmed",
+          "direction": "Attractive manifestoes → voter abstention.",
+          "supporting_citation_indices": [
+            3
+          ],
+          "entailed_from_quotes": "no",
+          "rationale": "Quote [3] says some people abstain when candidates and manifestoes are not appealing enough, not when they are attractive."
+        },
+        {
+          "claim_text": "Trust in leaders discourages voting.",
+          "subject": "Trust in leaders",
+          "predicate": "discourages",
+          "object_or_scope": "voting",
+          "polarity": "affirmed",
+          "direction": "Trust in leaders → reduced voting.",
+          "supporting_citation_indices": [
+            1,
+            2
+          ],
+          "entailed_from_quotes": "no",
+          "rationale": "Quotes [1] and [2] identify lost confidence and an expectation-performance gap as reasons for nonvoting; they do not say trust itself discourages voting."
+        }
+      ],
+      "decomposition_ambiguous": false,
+      "decomposition_rationale": "The question contains two distinct requested propositions.",
+      "step_judgments": [
+        {
+          "step_index": 1,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 2,
+          "quote_exactness": "yes",
+          "citation_support": "no",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": "Quote [2] says an expectation-performance gap may deter later voting; the candidate drops “may” and presents deterrence categorically."
+        },
+        {
+          "step_index": 3,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        }
+      ],
+      "link_judgments": [
+        {
+          "link": "1->2",
+          "connective_licensed": "no",
+          "direction_supported": "no",
+          "rationale": "Quote [2] describes a performance gap that may deter voting, but does not state that it explains the loss of confidence in step 1."
+        },
+        {
+          "link": "2->3",
+          "connective_licensed": "no",
+          "direction_supported": "no",
+          "rationale": "A performance gap and unattractive manifestoes are separate possible reasons for abstention; neither quote makes one the consequence of the other."
+        }
+      ],
+      "global_judgment": {
+        "question_answerable_from_quotes": "no",
+        "candidate_covers_all_goals": "yes",
+        "candidate_chain_fully_entailed": "no",
+        "rationale": "The quotes support nonvoting after lost confidence/performance gaps and when manifestoes are unappealing, not when they are attractive or because of trust itself. The candidate covers the related topics, but overstates modality in step 2 and its causal links are unsupported."
+      }
+    },
+    {
+      "case_id": "P9-5701667c1a52",
+      "requested_claims": [
+        {
+          "claim_text": "A mixed economy limits private investment.",
+          "subject": "A mixed economy",
+          "predicate": "limits",
+          "object_or_scope": "private investment",
+          "polarity": "affirmed",
+          "direction": "A mixed economy → reduced private investment.",
+          "supporting_citation_indices": [
+            2
+          ],
+          "entailed_from_quotes": "no",
+          "rationale": "Quote [2] says mixed economy makes private and public investment possible and attracts foreign investment, not that it limits private investment."
+        },
+        {
+          "claim_text": "A mixed economy reduces public employment.",
+          "subject": "A mixed economy",
+          "predicate": "reduces",
+          "object_or_scope": "public employment",
+          "polarity": "affirmed",
+          "direction": "A mixed economy → fewer public jobs.",
+          "supporting_citation_indices": [
+            3
+          ],
+          "entailed_from_quotes": "no",
+          "rationale": "Quote [3] says both the state and private entrepreneurs employ labour and that this helps reduce unemployment; it does not say public employment is reduced."
+        }
+      ],
+      "decomposition_ambiguous": false,
+      "decomposition_rationale": "The question contains two distinct requested propositions.",
+      "step_judgments": [
+        {
+          "step_index": 1,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 2,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 3,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        }
+      ],
+      "link_judgments": [
+        {
+          "link": "1->2",
+          "connective_licensed": "yes",
+          "direction_supported": "yes",
+          "rationale": "Quote [2] explicitly says mixed-economy opportunities for private and public investment attract foreign investors, aligning the direction from the system to investment."
+        },
+        {
+          "link": "2->3",
+          "connective_licensed": "no",
+          "direction_supported": "no",
+          "rationale": "Foreign-investment attraction and employment by both sectors are separate features; “whereas” does not mark a contrast established by the quotes."
+        }
+      ],
+      "global_judgment": {
+        "question_answerable_from_quotes": "no",
+        "candidate_covers_all_goals": "yes",
+        "candidate_chain_fully_entailed": "no",
+        "rationale": "The quotes support investment opportunities and employment by both sectors, not limits on private investment or reduced public employment. The candidate covers investment and employment topics but states different effects; its final contrast is unsupported."
+      }
+    },
+    {
+      "case_id": "P9-0ef2852b1f97",
+      "requested_claims": [
+        {
+          "claim_text": "A second legislative chamber revises bills.",
+          "subject": "A second legislative chamber",
+          "predicate": "revises",
+          "object_or_scope": "bills",
+          "polarity": "affirmed",
+          "direction": "Second chamber → revision of bills.",
+          "supporting_citation_indices": [
+            2
+          ],
+          "entailed_from_quotes": "yes",
+          "rationale": ""
+        },
+        {
+          "claim_text": "A second chamber prevents hurried lawmaking.",
+          "subject": "A second chamber",
+          "predicate": "prevents",
+          "object_or_scope": "hurried lawmaking",
+          "polarity": "affirmed",
+          "direction": "Second chamber → less hurried lawmaking.",
+          "supporting_citation_indices": [
+            1,
+            2,
+            3
+          ],
+          "entailed_from_quotes": "unclear",
+          "rationale": "Quote [2] says the chamber revises bills to ensure meaningful laws, and quote [3] says deadlock may delay government business; neither explicitly says it prevents hurried lawmaking."
+        }
+      ],
+      "decomposition_ambiguous": false,
+      "decomposition_rationale": "The question contains two distinct requested propositions.",
+      "step_judgments": [
+        {
+          "step_index": 1,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 2,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        },
+        {
+          "step_index": 3,
+          "quote_exactness": "yes",
+          "citation_support": "yes",
+          "subject_match": "yes",
+          "predicate_match": "yes",
+          "polarity_match": "yes",
+          "direction_match": "yes",
+          "rationale": ""
+        }
+      ],
+      "link_judgments": [
+        {
+          "link": "1->2",
+          "connective_licensed": "no",
+          "direction_supported": "no",
+          "rationale": "The absence of a second chamber explains why bills are not delayed in quote [1]; the revision function in quote [2] does not explain that absence, and the steps point in conflicting directions."
+        },
+        {
+          "link": "2->3",
+          "connective_licensed": "yes",
+          "direction_supported": "yes",
+          "rationale": "The quotes add distinct effects of a second chamber—revision and possible delay/deadlock—without asserting that revision causes the deadlock."
+        }
+      ],
+      "global_judgment": {
+        "question_answerable_from_quotes": "unclear",
+        "candidate_covers_all_goals": "yes",
+        "candidate_chain_fully_entailed": "no",
+        "rationale": "Revision of bills is explicit, but prevention of hurried lawmaking is only a plausible implication, not stated in the quotes. The chain covers revision and delay, yet its “because” link joins a unicameral fact to a bicameral function in an unsupported, conflicting direction."
+      }
+    }
+  ]
+}
